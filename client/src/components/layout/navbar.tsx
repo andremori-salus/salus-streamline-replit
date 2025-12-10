@@ -31,10 +31,10 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-display font-bold text-2xl tracking-tighter">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-              <span className="text-white text-lg">S</span>
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500 to-amber-600 flex items-center justify-center shadow-lg shadow-yellow-500/20">
+              <span className="text-black text-lg font-bold">S</span>
             </div>
-            Salus
+            <span className="text-foreground">Salus</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -43,7 +43,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-yellow-400 transition-colors"
             >
               {link.name}
             </a>
@@ -51,10 +51,10 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" className="text-foreground hover:bg-muted/50">
+          <Button variant="ghost" className="text-foreground hover:bg-muted/50 hover:text-yellow-400">
             Log in
           </Button>
-          <Button className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 font-bold shadow-lg shadow-yellow-500/20">
             Get Started
           </Button>
         </div>
@@ -90,7 +90,7 @@ export default function Navbar() {
               ))}
               <div className="flex flex-col gap-3 mt-4">
                 <Button variant="outline" className="w-full justify-center">Log in</Button>
-                <Button className="w-full justify-center">Get Started</Button>
+                <Button className="w-full justify-center bg-yellow-500 text-black font-bold">Get Started</Button>
               </div>
             </div>
           </motion.div>

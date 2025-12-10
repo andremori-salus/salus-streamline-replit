@@ -71,7 +71,7 @@ export default function CodeDemo() {
                   <code>
                     <span className="text-gray-500"># salus.yaml</span>
                     {"\n"}
-                    <span className="text-purple-400">version</span>: <span className="text-blue-300">2.1</span>
+                    <span className="text-purple-400">version</span>: <span className="text-yellow-200">2.1</span>
                     {"\n\n"}
                     <span className="text-purple-400">pipeline</span>:
                     {"\n"}
@@ -89,21 +89,21 @@ export default function CodeDemo() {
                     {"\n"}
                     <span className="text-purple-400">    scanner</span>: <span className="text-green-300">salus-guard</span>
                     {"\n"}
-                    <span className="text-purple-400">    level</span>: <span className="text-blue-300">strict</span>
+                    <span className="text-purple-400">    level</span>: <span className="text-yellow-200">strict</span>
                     {"\n\n"}
                     <span className="text-yellow-400">  deploy</span>:
                     {"\n"}
                     <span className="text-purple-400">    target</span>: <span className="text-green-300">aws-eks</span>
                     {"\n"}
-                    <span className="text-purple-400">    strategy</span>: <span className="text-blue-300">canary</span>
+                    <span className="text-purple-400">    strategy</span>: <span className="text-yellow-200">canary</span>
                     {"\n"}
                     <span className="text-purple-400">    traffic</span>:
                     {"\n"}
-                    <span className="text-purple-400">      initial</span>: <span className="text-blue-300">10%</span>
+                    <span className="text-purple-400">      initial</span>: <span className="text-yellow-200">10%</span>
                     {"\n"}
-                    <span className="text-purple-400">      step</span>: <span className="text-blue-300">10%</span>
+                    <span className="text-purple-400">      step</span>: <span className="text-yellow-200">10%</span>
                     {"\n"}
-                    <span className="text-purple-400">      interval</span>: <span className="text-blue-300">5m</span>
+                    <span className="text-purple-400">      interval</span>: <span className="text-yellow-200">5m</span>
                   </code>
                 </pre>
               </div>
@@ -126,7 +126,7 @@ export default function CodeDemo() {
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-1 w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
+                <div className="mt-1 w-6 h-6 rounded-full bg-yellow-500/20 text-yellow-400 flex items-center justify-center shrink-0">
                   <Check className="w-4 h-4" />
                 </div>
                 <div>

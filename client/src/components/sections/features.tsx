@@ -8,17 +8,17 @@ const features = [
     description: "Go from commit to production in under 5 minutes with our hyper-optimized build pipelines."
   },
   {
-    icon: <Shield className="w-6 h-6 text-blue-400" />,
+    icon: <Shield className="w-6 h-6 text-amber-400" />,
     title: "Bank-Grade Security",
     description: "Automated vulnerability scanning and role-based access control built into every layer."
   },
   {
-    icon: <Cpu className="w-6 h-6 text-purple-400" />,
+    icon: <Cpu className="w-6 h-6 text-orange-400" />,
     title: "AI-Powered Ops",
     description: "Our AI agents monitor your infrastructure 24/7, predicting and preventing downtime."
   },
   {
-    icon: <Cloud className="w-6 h-6 text-cyan-400" />,
+    icon: <Cloud className="w-6 h-6 text-yellow-200" />,
     title: "Multi-Cloud Native",
     description: "Deploy to AWS, GCP, and Azure simultaneously without changing a single line of config."
   },
@@ -28,7 +28,7 @@ const features = [
     description: "Every request is authenticated, authorized, and encrypted. Trust no one, verify everything."
   },
   {
-    icon: <GitBranch className="w-6 h-6 text-orange-400" />,
+    icon: <GitBranch className="w-6 h-6 text-yellow-600" />,
     title: "Automated Workflows",
     description: "Connect GitHub or GitLab and let Salus handle the rest. Branch previews included."
   }
@@ -53,12 +53,12 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group p-8 rounded-2xl bg-card border border-white/5 hover:border-white/10 transition-all hover:bg-card/80 hover:shadow-2xl hover:shadow-blue-500/10"
+              className="group p-8 rounded-2xl bg-card border border-white/5 hover:border-yellow-500/30 transition-all hover:bg-card/80 hover:shadow-2xl hover:shadow-yellow-500/10"
             >
-              <div className="w-12 h-12 rounded-lg bg-background border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-lg bg-background border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-yellow-500/50">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors">{feature.title}</h3>
+              <h3 className="text-xl font-bold mb-3 group-hover:text-yellow-400 transition-colors">{feature.title}</h3>
               <p className="text-muted-foreground leading-relaxed">
                 {feature.description}
               </p>
